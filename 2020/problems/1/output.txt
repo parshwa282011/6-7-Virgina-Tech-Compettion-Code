@@ -1,0 +1,52 @@
+Number of test cases: 3
+
+=== TEST CASE 1 ===
+--- INPUT ---
+6
+Blue
+Orange
+Pink
+Green
+Red
+Yellow
+--- END INPUT ---
+--- OUTPUT (stdout) ---
+1
+--- RETURN CODE: 0 ---
+
+=== TEST CASE 2 ===
+--- INPUT ---
+12
+Blue
+Orange
+Pink
+Green
+Red
+Yellow
+Yellow
+Red
+Green
+Pink
+Orange
+Blue
+--- END INPUT ---
+--- OUTPUT (stdout) ---
+2
+--- RETURN CODE: 0 ---
+
+=== TEST CASE 3 ===
+--- INPUT ---
+9
+Blue
+Orange
+Pink
+Green
+Red
+Yellow
+Yellow
+Yellow
+Yellow--- END INPUT ---
+--- OUTPUT (stdout) ---
+4
+--- RETURN CODE: 0 ---
+
