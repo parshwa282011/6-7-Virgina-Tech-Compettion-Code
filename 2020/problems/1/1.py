@@ -29,13 +29,15 @@ else:
     for i in range(n):
         arr.append(input().strip())
     if len(set(arr)) == len(arr):
+<<<<<<< Updated upstream
         cnt = 0
         pos = -1
+=======
+>>>>>>> Stashed changes
         # Try every color each time and whatever gets u the furthest 
         # stick with that don't need to store the color just a while loop
         # Instead of checking every color every time, we can check 
         # for all indices of all colors, and get the closest index after pos + 1
-        cnt = 0
         blue = []
         orange = []
         pink = []
