@@ -1,22 +1,25 @@
-if __name__ != "__main__":
+if __name__ == "__main__":
+    from collections import Counter
     n = int(input())
     possible = ["Blue", "Orange", "Pink", "Green", "Red", "Yellow"]
     allSeen = []
     seen = []
     best = []
     count = 0
+    bestDists = {}
     for _ in range(n):
         inp = input()
         if inp not in seen:
             seen.append(inp)
-        else:
-            count += 1
+            bestDists[inp] = count
+        count += 1
         allSeen.append(inp)
         if len(seen) == len(possible):
             seen = []
             best.append(inp)
             count = 0
             allSeen = []
+            bestDists = {}
     print(len(best))
 else:
     # hari code
@@ -26,7 +29,7 @@ else:
     for i in range(n):
         arr.append(input().strip())
     if len(set(arr)) == len(arr):
-        cnt = 1
+        cnt = 0
         pos = -1
         # Try every color each time and whatever gets u the furthest 
         # stick with that don't need to store the color just a while loop
@@ -56,6 +59,6 @@ else:
         cnt = 0
         g = 0
         while g < n - 1:
-            g = max(g, big[cnt])
+            g = max(big[cnt])
             cnt += 1
 print(cnt)
