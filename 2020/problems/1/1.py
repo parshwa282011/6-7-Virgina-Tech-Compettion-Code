@@ -1,6 +1,7 @@
 if __name__ == "__main__":
     n = int(input())
     possible = ["Blue", "Orange", "Pink", "Green", "Red", "Yellow"]
+    allSeen = []
     seen = []
     best = []
     count = 0
@@ -10,11 +11,13 @@ if __name__ == "__main__":
             seen.append(inp)
         else:
             count += 1
+        allSeen.append(inp)
         if len(seen) == len(possible):
             seen = []
             best.append(inp)
             count = 0
-    print(len(best) + count + (1 if seen else 0))
+            allSeen = []
+    print(len(best))
 else:
     # hari code
     from itertools import zip_longest

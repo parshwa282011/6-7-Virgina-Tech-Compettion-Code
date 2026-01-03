@@ -1,4 +1,4 @@
-3
+4
 6
 Blue
 Orange
@@ -28,4 +28,14 @@ Red
 Yellow
 Yellow
 Yellow
+Yellow
+9
+Blue
+Orange
+Pink
+Green
+Red
+Yellow
+Yellow
+Blue
 Yellow
