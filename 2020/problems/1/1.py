@@ -1,28 +1,28 @@
-# n = int(input())
-# possible = ["Blue", "Orange", "Pink", "Green", "Red", "Yellow"]
-# seen = []
-# best = []
-# count = 0
-# for _ in range(n):
-#     inp = input()
-#     if inp not in seen:
-#         seen.append(inp)
-#     else:
-#         count += 1
-#     if len(seen) == len(possible):
-#         seen = []
-#         best.append(inp)
-#         count = 0
-# print(len(best) + count + (1 if seen else 0))
-
+if 1 == 0:
+	n = int(input())
+	possible = ["Blue", "Orange", "Pink", "Green", "Red", "Yellow"]
+	seen = []
+	best = []
+	count = 0
+	for _ in range(n):
+	inp = input()
+	if inp not in seen:
+		seen.append(inp)
+	else:
+		count += 1
+	if len(seen) == len(possible):
+		seen = []
+		best.append(inp)
+		count = 0
+	print(len(best) + count + (1 if seen else 0))
 # hari code
 from itertools import zip_longest
 n = int(input())
 arr = []
 for i in range(n):
-        arr.append(input().strip())
+	arr.append(input().strip())
 if len(set(arr)) == len(arr):
-        cnt = 1
+	cnt = 1
 else:
         pos = -1
         # Try every color each time and whatever gets u the furthest 
