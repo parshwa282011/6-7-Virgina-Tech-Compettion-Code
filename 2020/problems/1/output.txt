@@ -11,7 +11,7 @@ Red
 Yellow
 --- END INPUT ---
 --- OUTPUT (stdout) ---
-1
+1
 --- RETURN CODE: 0 ---
 
 === TEST CASE 2 ===
@@ -31,8 +31,13 @@ Orange
 Blue
 --- END INPUT ---
 --- OUTPUT (stdout) ---
-2
---- RETURN CODE: 0 ---
+--- OUTPUT (stderr) ---
+Traceback (most recent call last):
+  File "C:\Users\bveer\Downloads\Virginia_Code\6-7-Virgina-Tech-Compettion-Code\2020\problems\1\1.py", line 58, in <module>
+    print(cnt)
+          ^^^
+NameError: name 'cnt' is not defined. Did you mean: 'int'?
+--- RETURN CODE: 1 ---
 
 === TEST CASE 3 ===
 --- INPUT ---
@@ -47,6 +52,11 @@ Yellow
 Yellow
 Yellow--- END INPUT ---
 --- OUTPUT (stdout) ---
-4
---- RETURN CODE: 0 ---
+--- OUTPUT (stderr) ---
+Traceback (most recent call last):
+  File "C:\Users\bveer\Downloads\Virginia_Code\6-7-Virgina-Tech-Compettion-Code\2020\problems\1\1.py", line 58, in <module>
+    print(cnt)
+          ^^^
+NameError: name 'cnt' is not defined. Did you mean: 'int'?
+--- RETURN CODE: 1 ---
 

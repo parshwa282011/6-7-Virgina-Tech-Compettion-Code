@@ -1,4 +1,4 @@
-if __name__ == "__main__":
+if __name__ != "__main__":
     n = int(input())
     possible = ["Blue", "Orange", "Pink", "Green", "Red", "Yellow"]
     allSeen = []
@@ -56,6 +56,6 @@ else:
         cnt = 0
         g = 0
         while g < n - 1:
-            g = max(big[cnt])
+            g = max(g, big[cnt])
             cnt += 1
 print(cnt)
